@@ -1,0 +1,140 @@
+:root {
+  --color-background: #ffffff;
+  --color-text: #1e2022;
+  --color-muted: #a3b6b4;
+  --color-accent: #FFB300;
+  --color-panel: #a3b6b4;
+  --color-border: #d7dfde;
+}
+
+html,
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.reveal {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--color-text);
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slides section {
+  box-sizing: border-box;
+  padding: 2.4rem 2.8rem;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  color: var(--color-accent);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.7em;
+  text-transform: none;
+}
+
+.reveal h1 {
+  font-size: 2.15em;
+}
+
+.reveal h2 {
+  font-size: 1.35em;
+}
+
+.reveal h3 {
+  font-size: 1.05em;
+}
+
+.reveal p,
+.reveal li {
+  font-size: 0.98em;
+  line-height: 1.45;
+}
+
+.reveal p {
+  margin: 0.35em 0 0.85em;
+}
+
+.reveal ul,
+.reveal ol {
+  display: block;
+  margin: 0.45em 0 0.95em 1.2em;
+  padding: 0;
+}
+
+.reveal li + li {
+  margin-top: 0.28em;
+}
+
+.reveal ul ul {
+  margin-top: 0.3em;
+}
+
+.reveal a {
+  color: var(--color-text);
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.16em;
+}
+
+.reveal code {
+  font-family: "Cascadia Code", Consolas, monospace;
+  background: var(--color-panel);
+  border-radius: 0.2em;
+  padding: 0.08em 0.22em;
+}
+
+.reveal pre {
+  width: 100%;
+  margin: 0.8em 0 1em;
+  box-shadow: none;
+  border: 1px solid var(--color-border);
+  border-radius: 0.45em;
+  overflow: hidden;
+  background: var(--color-panel);
+}
+
+.reveal pre code {
+  display: block;
+  max-height: none;
+  padding: 1em;
+  color: var(--color-text);
+}
+
+.reveal img {
+  display: block;
+  max-width: 100%;
+  max-height: 58vh;
+  margin: 0.75em auto 0;
+  background: var(--color-panel);
+  border: 1px solid var(--color-border);
+  border-radius: 0.4em;
+}
+
+.reveal blockquote,
+.reveal table {
+  background-color: var(--color-panel);
+}
+
+.reveal .progress {
+  color: var(--color-accent);
+  height: 0.35rem;
+}
+
+.reveal .slide-number {
+  right: 1rem;
+  bottom: 0.9rem;
+  padding: 0.2rem 0.45rem;
+  background: rgba(30, 32, 34, 0.88);
+  color: var(--color-background);
+  border-radius: 999px;
+  font-size: 0.42em;
+}
+
+.reveal .controls {
+  color: var(--color-text);
+}

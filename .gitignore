@@ -1,12 +1,1 @@
-# Ignorera allt
-*
-
-# Tillåt README
-!README.md
-
-# Tillåt source-mappen
-!source/
-!source/**
-
-# Tillåt .gitignore själv
-!.gitignore
+node_modules/

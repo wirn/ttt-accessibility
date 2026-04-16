@@ -1,0 +1,14 @@
+{
+  "name": "ttt-a11y-presentation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static reveal.js presentation generated from source/slides.md",
+  "scripts": {
+    "build": "node build.js",
+    "start": "serve . -l 3000"
+  },
+  "dependencies": {
+    "reveal.js": "^5.2.1",
+    "serve": "^14.2.4"
+  }
+}
