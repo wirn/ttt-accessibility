@@ -4,6 +4,7 @@ const path = require("node:path");
 const projectRoot = __dirname;
 const sourcePath = path.join(projectRoot, "source", "slides.md");
 const outputPath = path.join(projectRoot, "index.html");
+const slideTransitions = ["zoom", "fade", "slide", "convex", "concave"];
 
 function escapeHtml(value) {
   return value
@@ -82,8 +83,9 @@ function closeLists(state, html) {
   }
 }
 
-function renderSlide(lines) {
-  const html = ["<section>"];
+function renderSlide(lines, slideIndex) {
+  const transition = slideTransitions[slideIndex % slideTransitions.length];
+  const html = [`<section data-transition="${transition}" data-slide-index="${slideIndex + 1}">`];
   const notes = [];
   const listState = { depth: 0 };
   let inCodeBlock = false;
@@ -230,8 +232,16 @@ ${slidesHtml}
     <script>
       Reveal.initialize({
         hash: true,
+        center: false,
         progress: true,
-        slideNumber: true,
+        slideNumber: "c/t",
+        transition: "convex",
+        backgroundTransition: "zoom",
+        controlsLayout: "edges",
+        controlsBackArrows: "visible",
+        autoAnimate: true,
+        autoAnimateEasing: "cubic-bezier(0.2, 0.8, 0.2, 1)",
+        autoAnimateDuration: 0.9,
         plugins: [RevealNotes]
       });
     </script>
@@ -242,7 +252,7 @@ ${slidesHtml}
 
 const markdown = fs.readFileSync(sourcePath, "utf8").replace(/^\uFEFF/, "").replace(/\r\n/g, "\n");
 const slides = splitSlides(markdown);
-const slidesHtml = slides.map((slide) => renderSlide(slide)).join("\n");
+const slidesHtml = slides.map((slide, index) => renderSlide(slide, index)).join("\n");
 
 fs.writeFileSync(outputPath, buildHtml(slidesHtml), "utf8");
 process.stdout.write(`Generated ${path.basename(outputPath)} with ${slides.length} slides.\n`);

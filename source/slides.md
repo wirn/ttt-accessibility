@@ -1,8 +1,21 @@
+# a11y
+
+a c c e s s i b i l i t y
+^----------------------------11----------------------------^
+
+<!--
+a = första bokstaven
+11 = antal bokstäver emellan
+y = sista bokstaven
+-->
+
+---
+
 # a11y i praktiken
 
-- Arbetsförmedlingen (2019)
-- SEB (2022)
-- Swedbank (2025)
+- Arbetsförmedlingen (2019) ![Arbetsförmedlingen](./source/af.jpg)
+- SEB (2022) ![SEB](./source/seb.png)
+- Swedbank (2025) ![Swedbank](./source/swedbank.jpg)
 
 
 ---
@@ -14,10 +27,10 @@
 - Kvalitet
 - Risk
 
-<!-- detta är inte valfritt -->
-<!-- vi stänger ute användare annars -->
-<!-- dålig a11y = dålig kod, kodstandard -->
-<!-- PTS-granskning -->
+<!-- Detta är inte valfritt, -->
+<!-- Vi stänger ute användare annars, -->
+<!-- dålig a11y = dålig kod, kodstandard (och tvärtom) -->
+<!-- PTS-granskning, -->
 <!-- Tillgänglighet är inte en feature – det är en kvalitetsnivå. -->
 
 ---
@@ -32,7 +45,12 @@ Oavsett:
 - Kognition
 - Teknik
 
-<!-- skärmläsare etc. -->
+<!-- Skärmläsare etc. -->
+<!-- Kognition, problem med förstår information, minns saker, koncentrerar sig.
+tex dyslexi,
+ADHD,
+minnessvårigheter & språkförståelse
+ -->
 
 ---
 
@@ -71,7 +89,9 @@ upp till 70 % påverkas
 - man inte kan logga in utan mus
 - prisändringar inte annonseras
 - knappar inte går att aktivera med Enter
+- felmeddelanden saknar koppling till fält
 - användaren hamnar "bakom" en modal
+- rubrik/main annonseras inte vid navigation
 
 <!-- Detta är inte undantag – det är vanligt -->
 
@@ -96,7 +116,7 @@ Perceivable (Innehåll ska kunna uppfattas),
 Operable (Det ska gå att använda tjänsten med tex tangenbord),
 Understandable (Det ska vara lätt att förstå ,tydligt språk, förutsägbart beteende), Robust (Fungerar i olika tekniker och hjälpmedel, t.ex. kompatibel med skärmläsare)
 -->
-<!-- tar inte bort gamla, lägger till nya -->
+<!-- Versioner. tar inte bort gamla, lägger till nya -->
 
 ## Nivå
 - A – grundläggande krav
@@ -124,6 +144,10 @@ Lagen om tillgänglighet till digital offentlig service
 - Offentligt finansierade aktörer
 - Vissa privata aktörer som utför offentlig tjänst
 
+<!-- Bygger på EU:s webbdirektiv. -->
+<!-- Minst WCAG 2.1 nivå AA i dag. -->
+
+
 ---
 
 # EAA
@@ -143,11 +167,10 @@ European Accessibility Act
 - Företag som inte erbjuder tjänster till konsumenter
 - Vissa mycket små företag
 
-<!-- t.ex. adminverktyg -->
-<!-- B2B-only -->
-<!-- undantag kan finnas -->
-<!-- Började gälla brett: 28 juni 2025 men kontrollerna drog/drar igång på allvar under 2026 -->
-<!-- EAA gäller inte alla företag – men generellt alla företag som erbjuder digitala tjänster till konsumenter påverkas i praktiken. Det blir i praktiken en hygienfaktor i hela marknaden. -->
+
+<!-- Började gälla brett: 28 juni 2025 men kontrollerna drog/drar igång på allvar under 2026, trappa upp. -->
+<!-- Minst WCAG 2.1 nivå AA i dag. -->
+<!-- EAA gäller inte alla privata företag – men generellt alla företag som erbjuder digitala tjänster till konsumenter påverkas i praktiken. Gäller tex inte Interna system, väldigt små företag, kan slippa om Orimlig börda, B2B mm -->
 
 ---
 
@@ -155,8 +178,9 @@ European Accessibility Act
 
 Post- och telestyrelsen
 
+![PTS](./source/pts.png)
 - Tillsynsmyndighet i Sverige
-- Ansvarar för att DOS-lagen följs
+- Ansvarar för att DOS-lagen och EAA följs
 
 <!--
 stickprov och riktade granskningar.
@@ -168,13 +192,14 @@ formulär
 interaktion.
 Vad händer vid brister?
 Den som tillhandahåller tjänsten måste:
-åtgärdsplan
+Åtgärdsplan
 Kan leda till
-uppföljning
-krav
-i vissa fall sanktioner/böter
-PTS testar som användare – inte som utvecklare.
+Uppföljning
+Krav
+I vissa fall sanktioner/böter
 PTS började testa 2025 men i år har de skalat upp testning och kommer forsätta med det.
+PTS testar som användare – inte som utvecklare.
+Berätta om Caludio (Swedank) och Anna (AF)
 -->
 
 <!-- Så vad går fel i praktiken? Här kommer några Ex -->
@@ -274,7 +299,7 @@ Interaktion kräver mus
 - <a href="/article">Läs mer</a>
 - <button> 🔍 </button>
 
-<!-- man måste kunna se för att förstå vad den refererar till -->
+<!-- man måste kunna se för att förstå vad den refererar till, berätta om anna på AF som använde Brail -->
 <!-- ingen label -->
 <!-- Om länken/knappen inte förklarar sig själv – så fungerar den inte -->
 
@@ -283,11 +308,8 @@ Interaktion kräver mus
 # Verktyg & test
 
 - Automatiska verktyg inte räcker
-- Lighthouse
-- Wave
-- Nvda
-- Jaws
-- VoiceOver
+- Lighthouse/Wave
+- Nvda/Jaws/VoiceOver/Talkback
 
 - Manuella tester
   - Tabba igenom sidan
@@ -345,3 +367,8 @@ Interaktion kräver mus
 ---
 
 # Frågor och kommentarer
+
+---
+
+# Tack för ordet!
+- 🙏

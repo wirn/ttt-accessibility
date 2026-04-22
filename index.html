@@ -11,394 +11,366 @@
   <body>
     <div class="reveal">
       <div class="slides">
-<section>
-  <h1>a11y i praktiken</h1>
-<ul>
-  <li>Arbetsförmedlingen (2019)
-  </li>
-  <li>SEB (2022)
-  </li>
-  <li>Swedbank (2025)
-  </li>
-</ul>
-</section>
-<section>
-  <h1>Varför</h1>
-<ul>
-  <li>Lagkrav
-  </li>
-  <li>Affär
-  </li>
-  <li>Kvalitet
-  </li>
-  <li>Risk
-  </li>
-</ul>
-  <aside class="notes">detta är inte valfritt
-vi stänger ute användare annars
-dålig a11y = dålig kod, kodstandard
-PTS-granskning
-Tillgänglighet är inte en feature – det är en kvalitetsnivå.</aside>
-</section>
-<section>
-  <h1>Vad är tillgänglighet?</h1>
-  <p>Att alla kan använda tjänsten</p>
-  <p>Oavsett:</p>
-<ul>
-  <li>Syn
-  </li>
-  <li>Motorik
-  </li>
-  <li>Kognition
-  </li>
-  <li>Teknik
-  </li>
-</ul>
-  <aside class="notes">skärmläsare etc.</aside>
-</section>
-<section>
-  <h1>Vem är det för?</h1>
-<ul>
-  <li>Sensoriska funktionsnedsättningar
-  </li>
-  <li>Motoriska funktionsnedsättningar
-  </li>
-  <li>Kognitiva och neuropsykiatriska funktionsnedsättningar
-  </li>
-  <li>Äldre personer
-  </li>
-  <li>Tillfälliga funktionsnedsättningar
-  </li>
-  <li>Situationsbaserade begränsningar
-  </li>
-</ul>
-  <aside class="notes">syn, hörsel
-t.ex. dyslexi, ADHD, autism
-t.ex. skada, trötthet, stress
-t.ex. ljus, buller, enhandsgrepp
-Låg digital vana eller begränsad språkkunskap</aside>
-</section>
-<section>
-  <h1>Hur många berörs?</h1>
-  <p>1 av 6 globalt har funktionsnedsättning</p>
-  <p>~10 % dyslexi<br /></p>
-  <p>20 % beroende av a11y<br /></p>
-  <p>upp till 70 % påverkas<br /></p>
-  <aside class="notes">1 av 6 globalt har funktionsnedsättning endligt WHO
-Runt 10 % har dyslexi eller liknande kognitiva svårigheter
-Minst 20 % är direkt beroende av tillgänglighetsanpassningar – men upp till 50–70 % har nytta av den i praktiken.</aside>
-</section>
-<section>
-  <h1>Reality check</h1>
-<ul>
-  <li>man inte kan logga in utan mus
-  </li>
-  <li>prisändringar inte annonseras
-  </li>
-  <li>knappar inte går att aktivera med Enter
-  </li>
-  <li>användaren hamnar &quot;bakom&quot; en modal
-  </li>
-</ul>
-  <aside class="notes">Detta är inte undantag – det är vanligt</aside>
-</section>
-<section>
-  <h1>WCAG</h1>
-  <h2>Version</h2>
-<ul>
-  <li>WCAG 2.0 (2008)
-  </li>
-  <li>WCAG 2.1 (2018)
-  </li>
-  <li>WCAG 2.2 (2023)
-  </li>
-</ul>
-  <p>-Perceivable</p>
-  <p>-Operable</p>
-  <p>-Understandable</p>
-  <p>-Robust</p>
-  <h2>Nivå</h2>
-<ul>
-  <li>A – grundläggande krav
-  </li>
-  <li>AA – standardnivå
-  </li>
-  <li>AAA – avancerad nivå
-  </li>
-</ul>
-  <aside class="notes">Web Content Accessibility Guidelines
-internationell standard som beskriver hur man gör webbplatser och appar tillgängliga för alla
-Perceivable (Innehåll ska kunna uppfattas),
-Operable (Det ska gå att använda tjänsten med tex tangenbord),
-Understandable (Det ska vara lätt att förstå ,tydligt språk, förutsägbart beteende), Robust (Fungerar i olika tekniker och hjälpmedel, t.ex. kompatibel med skärmläsare)
-tar inte bort gamla, lägger till nya
-det vi ska uppnå
-sällan krav
-Nivå AA innehåller A och AAA innehåller AA
-A (grundkrav)
-AA (standardnivå – lagkrav i EU/Sverige), vanligast
-AAA (högsta nivå)
-De flesta försöker nå WCAG 2.1 AA vilket är den nivå dos/pts samt EEA går efter</aside>
-</section>
-<section>
-  <h1>DOS</h1>
-  <p>Lagen om tillgänglighet till digital offentlig service</p>
-<ul>
-  <li>Myndigheter
-  </li>
-  <li>Kommuner och regioner
-  </li>
-  <li>Offentligt finansierade aktörer
-  </li>
-  <li>Vissa privata aktörer som utför offentlig tjänst
-  </li>
-</ul>
-</section>
-<section>
-  <h1>EAA</h1>
-  <p>European Accessibility Act</p>
-  <h2>EAA - privat sektor</h2>
-  <h3>ex</h3>
-<ul>
-  <li>Banker
-  </li>
-  <li>E-handel
-  </li>
-  <li>Transport
-  </li>
-  <li>Digitala tjänster och produkter
-  </li>
-</ul>
-  <h3>ex där det inte gäller</h3>
-<ul>
-  <li>Interna system
-  </li>
-  <li>Företag som inte erbjuder tjänster till konsumenter
-  </li>
-  <li>Vissa mycket små företag
-  </li>
-</ul>
-  <aside class="notes">t.ex. adminverktyg
-B2B-only
-undantag kan finnas
-Började gälla brett: 28 juni 2025 men kontrollerna drog/drar igång på allvar under 2026
-EAA gäller inte alla företag – men generellt alla företag som erbjuder digitala tjänster till konsumenter påverkas i praktiken. Det blir i praktiken en hygienfaktor i hela marknaden.</aside>
-</section>
-<section>
-  <h1>PTS</h1>
-  <p>Post- och telestyrelsen</p>
-<ul>
-  <li>Tillsynsmyndighet i Sverige
-  </li>
-  <li>Ansvarar för att DOS-lagen följs
-  </li>
-</ul>
-  <aside class="notes">stickprov och riktade granskningar.
-Testar verkliga användarflöden
-Inte bara automatiska verktyg
-Fokuserar på:
-navigation
-formulär
-interaktion.
-Vad händer vid brister?
-Den som tillhandahåller tjänsten måste:
-åtgärdsplan
-Kan leda till
-uppföljning
-krav
-i vissa fall sanktioner/böter
-PTS testar som användare – inte som utvecklare.
-PTS började testa 2025 men i år har de skalat upp testning och kommer forsätta med det.
-Så vad går fel i praktiken? Här kommer några Ex</aside>
-</section>
-<section>
-  <h1>Rubrikstruktur</h1>
-<ul>
-  <li>h1 = sidans huvudrubrik
-  </li>
-  <li>h2 = sektioner
-  </li>
-  <li>h3 = undersektioner
-  </li>
-</ul>
-  <aside class="notes">Som en innehållsförteckning</aside>
-</section>
-<section>
-  <h1>Alt-texter</h1>
-<ul>
-  <li>ha en meningsfull alt-text
-  </li>
-  <li>eller vara dekorativa
-  </li>
-  <li>Dekorativa bilder ska inte läsas upp
-  </li>
-  <li>aria-hidden används för att dölja innehåll helt
-  </li>
-</ul>
-  <aside class="notes">Alla bilder ska ha ett alt-attribut
-dekorativa bilder får alt=&quot;&quot;,
-informativa och funktionella bilder ska ha en kort text som beskriver innehåll eller syfte.</aside>
-</section>
-<section>
-  <h1>Fokusordning / fokus försvinner</h1>
-  <aside class="notes">Fokus hoppar fel
-Fokus försvinner helt
-Fokus följer inte det visuella flödet
-t.ex. Användaren klickar på en länk, Ny sida laddas (client-side), Problem: Fokus ligger kvar på gamla länken,
-modal-ex</aside>
-</section>
-<section>
-  <h1>Tangentbord fungerar inte</h1>
-  <aside class="notes">Du kan inte använda sidan med Tab, Piltangenter, Enter, Space
-Interaktion kräver mus
-&quot;Knappar&quot; som inte går att klicka med Enter. Enter gör inget, Space gör inget</aside>
-</section>
-<section>
-  <h1>Semantik / fel element</h1>
-<ul>
-  <li>Tex knappar Swedbank
-  </li>
-  <li>Name, Role, Value
-  </li>
-  <li>t.ex. &lt;div onclick=&quot;submit()&quot;&gt;Skicka&lt;/div&gt;
-  </li>
-</ul>
-  <aside class="notes">t.ex. &quot;Sök&quot;
-t.ex. button
-checked/expanded/selected
-alla interaktiva element ska ha name och role – state när det behövs</aside>
-</section>
-<section>
-  <h1>Dynamiskt innehåll annonseras inte</h1>
-  <p><img src="./source/swedb.png" alt="Swedbank" /></p>
-</section>
-<section>
-  <h1>Formulärproblem</h1>
-<ul>
-  <li>Användaren kan inte förstå vad som ska fyllas i
-  </li>
-  <li>Eller får inte veta vad som är fel
-  </li>
-</ul>
-  <p><img src="./source/af.png" alt="Arbetsförmedlingen" /></p>
-  <aside class="notes">tex labels kopplas till input el viktig information försvinner vid placeholders</aside>
-</section>
-<section>
-  <h1>Modaler</h1>
-  <p><a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog">Exempel</a></p>
-</section>
-<section>
-  <h1>Kontrastproblem</h1>
-<ul>
-  <li>Text eller UI syns inte tillräckligt tydligt mot bakgrunden
-  </li>
-</ul>
-  <aside class="notes">Om det inte syns – så finns det inte.
-går att mäta med massa olika verktyg</aside>
-</section>
-<section>
-  <h1>Länkar/knappar saknar tydlig betydelse</h1>
-<ul>
-  <li>&lt;a href=&quot;/article&quot;&gt;Läs mer&lt;/a&gt;
-  </li>
-  <li>&lt;button&gt; 🔍 &lt;/button&gt;
-  </li>
-</ul>
-  <aside class="notes">man måste kunna se för att förstå vad den refererar till
-ingen label
-Om länken/knappen inte förklarar sig själv – så fungerar den inte</aside>
-</section>
-<section>
-  <h1>Verktyg &amp; test</h1>
-<ul>
-  <li>Automatiska verktyg inte räcker
-  </li>
-  <li>Lighthouse
-  </li>
-  <li>Wave
-  </li>
-  <li>Nvda
-  </li>
-  <li>Jaws
-  </li>
-  <li>VoiceOver
-  </li>
-</ul>
-<ul>
-  <li>Manuella tester
-  <ul>
-    <li>Tabba igenom sidan
-    </li>
-    <li>Använd bara tangentbord
-    </li>
-    <li>Testa formulär
-    </li>
-    <li>Öka Storek på text och element
-    </li>
-    <li>Använd tjänsten med endast skärmläsare
-    </li>
-  </ul>
-  </li>
-</ul>
-  <aside class="notes">Bra start – men långt ifrån tillräckligt, De hittar kanske en tredjedel av problemen
-tips: talet går att stänga av, gratis och räcker långt
-vanligare hos användare i Sverige
-Apple
-viktigt
-Det som inte läses upp – finns inte
-Stäng av musen, Detta hittar de flesta riktiga problem</aside>
-</section>
-<section>
-  <h1>Hur jobbar man med tillgänglighet?</h1>
-  <h2>I utveckling</h2>
-<ul>
-  <li>Använd native HTML
-  </li>
-  <li>Säkerställ tangentbordstöd
-  </li>
-  <li>Hantera fokus korrekt
-  </li>
-  <li>Använd semantik
-  </li>
-</ul>
-  <aside class="notes">button, input, label
-name, role, state
-Bygg inte custom om du inte måste, berätta om Acorn. Bygger du rätt från början slipper du fixa i efterhand och sparar massa tid</aside>
-</section>
-<section>
-  <h2>I design</h2>
-<ul>
-  <li>Säkerställ tillräcklig kontrast
-  </li>
-  <li>Tydliga interaktioner
-  </li>
-  <li>Information ska inte bara ges visuellt
-  </li>
-  <li>Tänk på struktur och rubriker
-  </li>
-</ul>
-  <aside class="notes">hover, fokus
-Det här är inte bara ett dev-problem, UX påverkar kanske 50 % av a11y, Dålig design går inte att koda bort</aside>
-</section>
-<section>
-  <h2>I test</h2>
-<ul>
-  <li>Testa med tangentbord
-  </li>
-  <li>Testa formulär
-  </li>
-  <li>Använd screen reader
-  </li>
-  <li>Kombinera auto + manuella tester
-  </li>
-</ul>
-  <aside class="notes">utan mus
-Automatiska tester räcker inte, Testa som en användare
-Definition of Done inkluderar a11y, UX, Dev och testare måste kunna a11y. Korrekt semantik underlättar mycket för a11y. Tillgänglighet är inget man lägger på i slutet – det måste byggas in från början.</aside>
-</section>
-<section>
-  <h1>Frågor och kommentarer</h1>
-</section>
+        <section data-transition="zoom" data-slide-index="1">
+          <h1>a11y</h1>
+          <p>a c c e s s i b i l i t y</p>
+          <p>^----------------------------11----------------------------^</p>
+          <aside class="notes">
+            a = första bokstaven 11 = antal bokstäver emellan y = sista
+            bokstaven
+          </aside>
+        </section>
+        <section data-transition="fade" data-slide-index="2">
+          <h1>a11y i praktiken</h1>
+          <ul>
+            <li>
+              Arbetsförmedlingen (2019)
+              <img src="./source/af.jpg" alt="Arbetsförmedlingen" />
+            </li>
+            <li>SEB (2022) <img src="./source/seb.png" alt="SEB" /></li>
+            <li>
+              Swedbank (2025) <img src="./source/swedbank.jpg" alt="Swedbank" />
+            </li>
+          </ul>
+        </section>
+        <section data-transition="slide" data-slide-index="3">
+          <h1>Varför</h1>
+          <ul>
+            <li>Lagkrav</li>
+            <li>Affär</li>
+            <li>Kvalitet</li>
+            <li>Risk</li>
+          </ul>
+          <aside class="notes">
+            Detta är inte valfritt, Vi stänger ute användare annars, dålig a11y
+            = dålig kod, kodstandard (och tvärtom) PTS-granskning,
+            Tillgänglighet är inte en feature – det är en kvalitetsnivå.
+          </aside>
+        </section>
+        <section data-transition="convex" data-slide-index="4">
+          <h1>Vad är tillgänglighet?</h1>
+          <p>Att alla kan använda tjänsten</p>
+          <p>Oavsett:</p>
+          <ul>
+            <li>Syn</li>
+            <li>Motorik</li>
+            <li>Kognition</li>
+            <li>Teknik</li>
+          </ul>
+          <aside class="notes">
+            Skärmläsare etc. Kognition, problem med förstår information, minns
+            saker, koncentrerar sig. tex dyslexi, ADHD, minnessvårigheter &amp;
+            språkförståelse
+          </aside>
+        </section>
+        <section data-transition="concave" data-slide-index="5">
+          <h1>Vem är det för?</h1>
+          <ul>
+            <li>Sensoriska funktionsnedsättningar</li>
+            <li>Motoriska funktionsnedsättningar</li>
+            <li>Kognitiva och neuropsykiatriska funktionsnedsättningar</li>
+            <li>Äldre personer</li>
+            <li>Tillfälliga funktionsnedsättningar</li>
+            <li>Situationsbaserade begränsningar</li>
+          </ul>
+          <aside class="notes">
+            syn, hörsel t.ex. dyslexi, ADHD, autism t.ex. skada, trötthet,
+            stress t.ex. ljus, buller, enhandsgrepp Låg digital vana eller
+            begränsad språkkunskap
+          </aside>
+        </section>
+        <section data-transition="zoom" data-slide-index="6">
+          <h1>Hur många berörs?</h1>
+          <p>1 av 6 globalt har funktionsnedsättning</p>
+          <p>~10 % dyslexi<br /></p>
+          <p>20 % beroende av a11y<br /></p>
+          <p>upp till 70 % påverkas<br /></p>
+          <aside class="notes">
+            1 av 6 globalt har funktionsnedsättning endligt WHO Runt 10 % har
+            dyslexi eller liknande kognitiva svårigheter Minst 20 % är direkt
+            beroende av tillgänglighetsanpassningar – men upp till 50–70 % har
+            nytta av den i praktiken.
+          </aside>
+        </section>
+        <section data-transition="fade" data-slide-index="7">
+          <h1>Reality check</h1>
+          <ul>
+            <li>man inte kan logga in utan mus</li>
+            <li>prisändringar inte annonseras</li>
+            <li>knappar inte går att aktivera med Enter</li>
+            <li>felmeddelanden saknar koppling till fält</li>
+            <li>användaren hamnar &quot;bakom&quot; en modal</li>
+            <li>rubrik/main annonseras inte vid navigation</li>
+          </ul>
+          <aside class="notes">Detta är inte undantag – det är vanligt</aside>
+        </section>
+        <section data-transition="slide" data-slide-index="8">
+          <h1>WCAG</h1>
+          <h2>Version</h2>
+          <ul>
+            <li>WCAG 2.0 (2008)</li>
+            <li>WCAG 2.1 (2018)</li>
+            <li>WCAG 2.2 (2023)</li>
+          </ul>
+          <p>-Perceivable</p>
+          <p>-Operable</p>
+          <p>-Understandable</p>
+          <p>-Robust</p>
+          <h2>Nivå</h2>
+          <ul>
+            <li>A – grundläggande krav</li>
+            <li>AA – standardnivå</li>
+            <li>AAA – avancerad nivå</li>
+          </ul>
+          <aside class="notes">
+            Web Content Accessibility Guidelines internationell standard som
+            beskriver hur man gör webbplatser och appar tillgängliga för alla
+            Perceivable (Innehåll ska kunna uppfattas), Operable (Det ska gå att
+            använda tjänsten med tex tangenbord), Understandable (Det ska vara
+            lätt att förstå ,tydligt språk, förutsägbart beteende), Robust
+            (Fungerar i olika tekniker och hjälpmedel, t.ex. kompatibel med
+            skärmläsare) Versioner. tar inte bort gamla, lägger till nya det vi
+            ska uppnå sällan krav Nivå AA innehåller A och AAA innehåller AA A
+            (grundkrav) AA (standardnivå – lagkrav i EU/Sverige), vanligast AAA
+            (högsta nivå) De flesta försöker nå WCAG 2.1 AA vilket är den nivå
+            dos/pts samt EEA går efter
+          </aside>
+        </section>
+        <section data-transition="convex" data-slide-index="9">
+          <h1>DOS</h1>
+          <p>Lagen om tillgänglighet till digital offentlig service</p>
+          <ul>
+            <li>Myndigheter</li>
+            <li>Kommuner och regioner</li>
+            <li>Offentligt finansierade aktörer</li>
+            <li>Vissa privata aktörer som utför offentlig tjänst</li>
+          </ul>
+          <aside class="notes">
+            Bygger på EU:s webbdirektiv. Minst WCAG 2.1 nivå AA i dag.
+          </aside>
+        </section>
+        <section data-transition="concave" data-slide-index="10">
+          <h1>EAA</h1>
+          <p>European Accessibility Act</p>
+          <h2>EAA - privat sektor</h2>
+          <h3>ex</h3>
+          <ul>
+            <li>Banker</li>
+            <li>E-handel</li>
+            <li>Transport</li>
+            <li>Digitala tjänster och produkter</li>
+          </ul>
+          <h3>ex där det inte gäller</h3>
+          <ul>
+            <li>Interna system</li>
+            <li>Företag som inte erbjuder tjänster till konsumenter</li>
+            <li>Vissa mycket små företag</li>
+          </ul>
+          <aside class="notes">
+            Började gälla brett: 28 juni 2025 men kontrollerna drog/drar igång
+            på allvar under 2026, trappa upp. Minst WCAG 2.1 nivå AA i dag. EAA
+            gäller inte alla privata företag – men generellt alla företag som
+            erbjuder digitala tjänster till konsumenter påverkas i praktiken.
+            Gäller tex inte Interna system, väldigt små företag, kan slippa om
+            Orimlig börda, B2B mm
+          </aside>
+        </section>
+        <section data-transition="zoom" data-slide-index="11">
+          <h1>PTS</h1>
+          <p>Post- och telestyrelsen</p>
+          <p><img src="./source/pts.png" alt="PTS" /></p>
+          <ul>
+            <li>Tillsynsmyndighet i Sverige</li>
+            <li>Ansvarar för att DOS-lagen och EAA följs</li>
+          </ul>
+          <aside class="notes">
+            stickprov och riktade granskningar. Testar verkliga användarflöden
+            Inte bara automatiska verktyg Fokuserar på: navigation formulär
+            interaktion. Vad händer vid brister? Den som tillhandahåller
+            tjänsten måste: Åtgärdsplan Kan leda till Uppföljning Krav I vissa
+            fall sanktioner/böter PTS började testa 2025 men i år har de skalat
+            upp testning och kommer forsätta med det. PTS testar som användare –
+            inte som utvecklare. Berätta om Caludio (Swedank) och Anna (AF) Så
+            vad går fel i praktiken? Här kommer några Ex
+          </aside>
+        </section>
+        <section data-transition="fade" data-slide-index="12">
+          <h1>Rubrikstruktur</h1>
+          <ul>
+            <li>h1 = sidans huvudrubrik</li>
+            <li>h2 = sektioner</li>
+            <li>h3 = undersektioner</li>
+          </ul>
+          <aside class="notes">Som en innehållsförteckning</aside>
+        </section>
+        <section data-transition="slide" data-slide-index="13">
+          <h1>Alt-texter</h1>
+          <ul>
+            <li>ha en meningsfull alt-text</li>
+            <li>eller vara dekorativa</li>
+            <li>Dekorativa bilder ska inte läsas upp</li>
+            <li>aria-hidden används för att dölja innehåll helt</li>
+          </ul>
+          <aside class="notes">
+            Alla bilder ska ha ett alt-attribut dekorativa bilder får
+            alt=&quot;&quot;, informativa och funktionella bilder ska ha en kort
+            text som beskriver innehåll eller syfte.
+          </aside>
+        </section>
+        <section data-transition="convex" data-slide-index="14">
+          <h1>Fokusordning / fokus försvinner</h1>
+          <aside class="notes">
+            Fokus hoppar fel Fokus försvinner helt Fokus följer inte det
+            visuella flödet t.ex. Användaren klickar på en länk, Ny sida laddas
+            (client-side), Problem: Fokus ligger kvar på gamla länken, modal-ex
+          </aside>
+        </section>
+        <section data-transition="concave" data-slide-index="15">
+          <h1>Tangentbord fungerar inte</h1>
+          <aside class="notes">
+            Du kan inte använda sidan med Tab, Piltangenter, Enter, Space
+            Interaktion kräver mus &quot;Knappar&quot; som inte går att klicka
+            med Enter. Enter gör inget, Space gör inget
+          </aside>
+        </section>
+        <section data-transition="zoom" data-slide-index="16">
+          <h1>Semantik / fel element</h1>
+          <ul>
+            <li>Tex knappar Swedbank</li>
+            <li>Name, Role, Value</li>
+            <li>
+              t.ex. &lt;div onclick=&quot;submit()&quot;&gt;Skicka&lt;/div&gt;
+            </li>
+          </ul>
+          <aside class="notes">
+            t.ex. &quot;Sök&quot; t.ex. button checked/expanded/selected alla
+            interaktiva element ska ha name och role – state när det behövs
+          </aside>
+        </section>
+        <section data-transition="fade" data-slide-index="17">
+          <h1>Dynamiskt innehåll annonseras inte</h1>
+          <p><img src="./source/swedb.png" alt="Swedbank" /></p>
+        </section>
+        <section data-transition="slide" data-slide-index="18">
+          <h1>Formulärproblem</h1>
+          <ul>
+            <li>Användaren kan inte förstå vad som ska fyllas i</li>
+            <li>Eller får inte veta vad som är fel</li>
+          </ul>
+          <p><img src="./source/af.png" alt="Arbetsförmedlingen" /></p>
+          <aside class="notes">
+            tex labels kopplas till input el viktig information försvinner vid
+            placeholders
+          </aside>
+        </section>
+        <section data-transition="convex" data-slide-index="19">
+          <h1>Modaler</h1>
+          <p>
+            <a
+              href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog"
+              >Exempel</a
+            >
+          </p>
+        </section>
+        <section data-transition="concave" data-slide-index="20">
+          <h1>Kontrastproblem</h1>
+          <ul>
+            <li>Text eller UI syns inte tillräckligt tydligt mot bakgrunden</li>
+          </ul>
+          <aside class="notes">
+            Om det inte syns – så finns det inte. går att mäta med massa olika
+            verktyg
+          </aside>
+        </section>
+        <section data-transition="zoom" data-slide-index="21">
+          <h1>Länkar/knappar saknar tydlig betydelse</h1>
+          <ul>
+            <li>&lt;a href=&quot;/article&quot;&gt;Läs mer&lt;/a&gt;</li>
+            <li>&lt;button&gt; 🔍 &lt;/button&gt;</li>
+          </ul>
+          <aside class="notes">
+            man måste kunna se för att förstå vad den refererar till, berätta om
+            anna på AF som använde Brail ingen label Om länken/knappen inte
+            förklarar sig själv – så fungerar den inte
+          </aside>
+        </section>
+        <section data-transition="fade" data-slide-index="22">
+          <h1>Verktyg &amp; test</h1>
+          <ul>
+            <li>Automatiska verktyg inte räcker</li>
+            <li>Lighthouse/Wave</li>
+            <li>Nvda/Jaws/VoiceOver/Talkback</li>
+          </ul>
+          <ul>
+            <li>
+              Manuella tester
+              <ul>
+                <li>Tabba igenom sidan</li>
+                <li>Använd bara tangentbord</li>
+                <li>Testa formulär</li>
+                <li>Öka Storek på text och element</li>
+                <li>Använd tjänsten med endast skärmläsare</li>
+              </ul>
+            </li>
+          </ul>
+          <aside class="notes">
+            Bra start – men långt ifrån tillräckligt, De hittar kanske en
+            tredjedel av problemen tips: talet går att stänga av, gratis och
+            räcker långt vanligare hos användare i Sverige Apple viktigt Det som
+            inte läses upp – finns inte Stäng av musen, Detta hittar de flesta
+            riktiga problem
+          </aside>
+        </section>
+        <section data-transition="slide" data-slide-index="23">
+          <h1>Hur jobbar man med tillgänglighet?</h1>
+          <h2>I utveckling</h2>
+          <ul>
+            <li>Använd native HTML</li>
+            <li>Säkerställ tangentbordstöd</li>
+            <li>Hantera fokus korrekt</li>
+            <li>Använd semantik</li>
+          </ul>
+          <aside class="notes">
+            button, input, label name, role, state Bygg inte custom om du inte
+            måste, berätta om Acorn. Bygger du rätt från början slipper du fixa
+            i efterhand och sparar massa tid
+          </aside>
+        </section>
+        <section data-transition="convex" data-slide-index="24">
+          <h2>I design</h2>
+          <ul>
+            <li>Säkerställ tillräcklig kontrast</li>
+            <li>Tydliga interaktioner</li>
+            <li>Information ska inte bara ges visuellt</li>
+            <li>Tänk på struktur och rubriker</li>
+          </ul>
+          <aside class="notes">
+            hover, fokus Det här är inte bara ett dev-problem, UX påverkar
+            kanske 50 % av a11y, Dålig design går inte att koda bort
+          </aside>
+        </section>
+        <section data-transition="concave" data-slide-index="25">
+          <h2>I test</h2>
+          <ul>
+            <li>Testa med tangentbord</li>
+            <li>Testa formulär</li>
+            <li>Använd screen reader</li>
+            <li>Kombinera auto + manuella tester</li>
+          </ul>
+          <aside class="notes">
+            utan mus Automatiska tester räcker inte, Testa som en användare
+            Definition of Done inkluderar a11y, UX, Dev och testare måste kunna
+            a11y. Korrekt semantik underlättar mycket för a11y. Tillgänglighet
+            är inget man lägger på i slutet – det måste byggas in från början.
+          </aside>
+        </section>
+        <section data-transition="zoom" data-slide-index="26">
+          <h1>Frågor och kommentarer</h1>
+        </section>
+        <section data-transition="fade" data-slide-index="27">
+          <h1>Tack för ordet!</h1>
+          <div style="font-size: 10rem">🙏</div>
+        </section>
       </div>
     </div>
     <script src="./node_modules/reveal.js/dist/reveal.js"></script>
@@ -406,9 +378,17 @@ Definition of Done inkluderar a11y, UX, Dev och testare måste kunna a11y. Korre
     <script>
       Reveal.initialize({
         hash: true,
+        center: false,
         progress: true,
-        slideNumber: true,
-        plugins: [RevealNotes]
+        slideNumber: "c/t",
+        transition: "convex",
+        backgroundTransition: "zoom",
+        controlsLayout: "edges",
+        controlsBackArrows: "visible",
+        autoAnimate: true,
+        autoAnimateEasing: "cubic-bezier(0.2, 0.8, 0.2, 1)",
+        autoAnimateDuration: 0.9,
+        plugins: [RevealNotes],
       });
     </script>
   </body>
